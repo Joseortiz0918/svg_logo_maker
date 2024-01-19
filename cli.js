@@ -21,7 +21,7 @@ const questions = [
     {
         type: "input",
         message: "Please enter 1, 2 or 3 Characters for your logo.",
-        name: "logoText",
+        name: "text",
         validate: textValidate,
       },
       {
@@ -35,13 +35,13 @@ const questions = [
         type: "list",
         message: "Please pick a shape for your logo.",
         name: "logoShape",
-        choices: ["Circle", "Square", "Triangle"],
+        choices: ["Circle", "Rectangle", "Triangle"],
       },
       {
         type: "input",
         message:
           "Please enter a color(keyword or hexadecimal number with #) for your logo's body.",
-        name: "bodyColor",
+        name: "shapeColor",
         validate: colorValidate,
       },
       {
